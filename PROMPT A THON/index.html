@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alien Graphic Designer Portfolio</title>
+
+  <!-- Google Fonts with Orbitron, Audiowide, and Exo 2 -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@400;600&family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+
+  <!-- Model Viewer CDN -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">ALIEN DESIGN</div>
+  <nav id="nav-menu">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#portfolio" class="nav-link">Portfolio</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <!-- Hamburger menu button for mobile -->
+  <button id="menu-toggle" aria-label="Toggle menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+</header>
+
+<main>
+  <!-- Home -->
+  <section id="home">
+    <h1>👽 Alien Graphic Designer</h1>
+    <p>Crafting cosmic visuals beyond the stars — Your next design from another galaxy.</p>
+
+    <!-- 3D Model Viewer -->
+    <model-viewer
+      src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+      alt="3D Alien Graphic Designer"
+      camera-controls
+      auto-rotate
+      ar
+      shadow-intensity="1"
+      style="background:#111a22;"
+    ></model-viewer>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Greetings Earthlings! I'm Zorblax, an alien graphic designer from the Andromeda galaxy.  
+      With over 300 galactic cycles of experience, I create out-of-this-world designs using advanced cosmic tools and interstellar creativity.  
+      Fluent in colors beyond visible spectrum and specialized in holographic art, my mission is to bring extraterrestrial flair to your brand.
+    </p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>My Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Cosmic Design 1" />
+        <div class="portfolio-info">Cosmic Poster Design</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Alien Typography" />
+        <div class="portfolio-info">Alien Typography Exploration</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=400&q=80" alt="Futuristic Branding" />
+        <div class="portfolio-info">Futuristic Branding Concept</div>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80" alt="Holographic Interface" />
+        <div class="portfolio-info">Holographic Interface Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Interstellar Logo Design</li>
+      <li>Cosmic Brand Identity</li>
+      <li>Galactic UI/UX Design</li>
+      <li>Holographic Visual Effects</li>
+      <li>3D Alien Character Modeling</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="E.T. John" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="john@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Send your cosmic message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Zorblax - Alien Graphic Designer. All rights reserved.
+</footer>
+
+<!-- External JS -->
+<script src="scripts.js"></script>
+
+</body>
+</html>
